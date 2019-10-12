@@ -70,14 +70,14 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  git-prompt
-  bundler
+  # git-prompt
+  # bundler
   dotenv
-  osx
+  # osx
   rake
   rbenv
-  aws
-  docker
+  # aws
+  # docker
   zsh-autosuggestions
 )
 
