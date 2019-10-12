@@ -1,0 +1,57 @@
+[core]
+	excludesfile = /Users/sakaikyohei/.gitignore_global
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff \"$LOCAL\" \"$REMOTE\"
+	prompt = false
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait \"$MERGED\"
+[user]
+	name = Kyohei Sakai
+	email = ladnack@gmail.com
+[color]
+	ui = auto
+[alias]
+	a = add .
+	ap = add -p
+	co = checkout
+	cob = checkout -b
+	com = checkout master
+	cos = checkout staging
+	c = commit
+	cm = commit -m
+	ca = commit --amend
+	b = branch
+	bv = branch -vv
+	bd = branch -D
+	brd = branch -r -d
+	d = diff
+	da = diff HEAD
+	s = status
+	st = stash
+	stk = stash --keep-index
+	stp = stash pop
+	lgo = log --graph --oneline
+	lgp = log -p
+	lg = log --graph
+	lgr = log --graph --date-order --pretty=format:'%Cblue%h %Cgreen%ci %Cred%an %Cblue%m %Creset%s %Cred%d'
+	pl = pull
+	puu = push --set-upstream
+	pf = push --force-with-lease
+	rb = rebase
+	rbc = rebase --continue
+	rbi = rebase -i
+	rup = remote update -p
+	rc = reset @^
+	edit = config --global --edit
+	pr = pull-request
+	prst = pull-request --browse -b master -h staging -m \"Staging\"
+[commit]
+	template = /Users/sakaikyohei/.stCommitMsg
+[push]
+	default = simple
+[hub]
+	protocol = ssh
