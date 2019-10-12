@@ -108,3 +108,89 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Alias
+# Git
+alias g='git'
+alias gl='git pull'
+alias gs='git status'
+alias gb='git branch'
+alias gc='git commit -m'
+alias gc.='git checkout .'
+alias gcb='git checkout -b'
+alias gr.='git reset .'
+alias ga='git add .'
+alias gd='git diff'
+alias grup='git remote update -p'
+alias gcos='git checkout staging'
+alias gcom='git checkout master'
+alias gst='git stash'
+alias gstp='git stash pop'
+alias hb="hub browse"
+alias tg="tig"
+# Gems
+alias be='bundle exec'
+alias sp='bundle exec rspec -fd'
+alias cb='bundle exec cucumber'
+alias ru='bundle exec rubocop'
+alias anns='bundle exec annotate --sort'
+# Rails
+alias r='bin/rails'
+alias rd='bin/rails db'
+alias rdm='bin/rails db:migrate'
+alias rdms='bin/rails db:migrate:status'
+alias rdr='bin/rails db:rollback'
+# RAILS_ENV=test
+alias rt='bin/rails RAILS_ENV=test'
+alias rtd='bin/rails db RAILS_ENV=test'
+alias rtdm='bin/rails db:migrate RAILS_ENV=test'
+alias rtdms='bin/rails db:migrate:status RAILS_ENV=test'
+alias rtdr='bin/rails db:rollback RAILS_ENV=test'
+# Heroku
+alias hr='heroku'
+alias hrl='heroku logs --app'
+alias hrlt='heroku logs --tail -app'
+alias hrrc='heroku run rails console --app'
+alias hrrcs='heroku run rails console --app ookami-staging'
+# DB
+alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
+alias pgs='pg start'
+alias pgp='pg stop'
+alias pgr='pg restart'
+# ls option ==>Replace exa command
+# alias ls='exa -G'
+# alias ll='exa -lG'
+# alias la='exa -laG'
+# alias lh='exa -abghHliS'
+# alias lt='exa --long --tree'
+# tmux
+alias t='tmux'
+alias tkl='tmux kill-server'
+alias tls='tmux ls'
+alias tn='tmux new -s'
+alias tkls='tmux kill-session -t'
+alias ta='tmux a -t'
+alias tcf='tmux source ~/.tmux.conf'
+# Flutter
+alias fl='flutter'
+# Edit alias
+alias edal='code ~/.zshrc'
+alias fal='alias | ag'
+alias setal='source ~/.zshrc'
+# s3cmd
+alias s3ls='s3cmd ls'
+alias s3get='s3cmd get --force --recursive'
+# Unzip
+# alias unar='unar'
+# cd
+alias api='cd ~/ookamiinc/api'
+alias cdd='cd ~/Desktop'
+# others
+alias chr='open -a Google\ Chrome'
+alias c='code'
+alias c.='code .'
+alias hi='ookami open'
+alias edzsh='code ~/.zshrc'
+alias .zsh='source ~/.zshrc'
+alias ff='find . -name'
+alias tl='tree -L 1'
