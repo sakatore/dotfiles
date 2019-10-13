@@ -211,6 +211,39 @@ function _pip_completion {
 compctl -K _pip_completion pip
 # pip zsh completion end
 
+#
+# Python version manager
+#
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# pyenv zsh completion start
+# Copy & Paste from https://github.com/pyenv/pyenv/blob/master/completions/pyenv.zsh
+if [[ ! -o interactive ]]; then
+    return
+fi
+
+compctl -K _pyenv pyenv
+
+_pyenv() {
+  local words completions
+  read -cA words
+
+  if [ "${#words}" -eq 2 ]; then
+    completions="$(pyenv commands)"
+  else
+    completions="$(pyenv completions ${words[2,-2]})"
+  fi
+
+  reply=(${(ps:\n:)completions})
+}
+# pyenv zsh completion end
+
+#
+# Node.js version manager
+#
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
