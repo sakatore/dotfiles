@@ -261,3 +261,6 @@ source $HOME/.local/bin/aws_zsh_completer.sh
 
 # Flutter
 export PATH="$HOME/Development/flutter/bin:$PATH"
+
+# Personal commands
+export PATH=~/Personal/bin:$PATH
