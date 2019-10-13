@@ -258,3 +258,6 @@ export NVM_DIR="$HOME/.nvm"
 # AWS CLI
 #
 source $HOME/.local/bin/aws_zsh_completer.sh
+
+# Flutter
+export PATH="$HOME/Development/flutter/bin:$PATH"
