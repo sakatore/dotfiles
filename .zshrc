@@ -253,3 +253,8 @@ eval "$(pipenv --completion)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+#
+# AWS CLI
+#
+source $HOME/.local/bin/aws_zsh_completer.sh
