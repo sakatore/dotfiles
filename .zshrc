@@ -78,6 +78,7 @@ plugins=(
   rbenv
   # aws
   # docker
+  # nvm
   zsh-autosuggestions
 )
 
@@ -209,3 +210,7 @@ function _pip_completion {
 }
 compctl -K _pip_completion pip
 # pip zsh completion end
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
