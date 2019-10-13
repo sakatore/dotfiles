@@ -90,6 +90,8 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
+# To resolve https://github.com/pypa/pipenv/blob/399c8795c77dbf99b48959008881e586be5f8adb/docs/diagnose.rst#-valueerror-unknown-locale-utf-8
+export LC_ALL=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -241,6 +243,8 @@ _pyenv() {
   reply=(${(ps:\n:)completions})
 }
 # pyenv zsh completion end
+
+eval "$(pipenv --completion)"
 
 #
 # Node.js version manager
