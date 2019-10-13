@@ -109,7 +109,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# ========================================
+#
 # Alias
+#
 # Git
 alias g='git'
 alias gl='git pull'
@@ -126,8 +129,9 @@ alias gcos='git checkout staging'
 alias gcom='git checkout master'
 alias gst='git stash'
 alias gstp='git stash pop'
-alias hb="hub browse"
 alias tg="tig"
+# Github
+alias hb="hub browse"
 # Gems
 alias be='bundle exec'
 alias sp='bundle exec rspec -fd'
@@ -164,19 +168,17 @@ alias pgr='pg restart'
 # alias lh='exa -abghHliS'
 # alias lt='exa --long --tree'
 # tmux
-alias t='tmux'
-alias tkl='tmux kill-server'
-alias tls='tmux ls'
-alias tn='tmux new -s'
-alias tkls='tmux kill-session -t'
-alias ta='tmux a -t'
-alias tcf='tmux source ~/.tmux.conf'
+alias x='tmux'
+alias xls='tmux ls'
+alias xn='tmux new -s'
+alias xa='tmux a -t'
+alias xkill='tmux kill-session -t'
+alias xkills='tmux kill-server'
 # Flutter
 alias fl='flutter'
-# Edit alias
-alias edal='code ~/.zshrc'
-alias fal='alias | ag'
-alias setal='source ~/.zshrc'
+# zsh config
+alias zshrc='code ~/.zshrc'
+alias zshrcload='source ~/.zshrc'
 # s3cmd
 alias s3ls='s3cmd ls'
 alias s3get='s3cmd get --force --recursive'
@@ -186,11 +188,12 @@ alias s3get='s3cmd get --force --recursive'
 alias api='cd ~/ookamiinc/api'
 alias cdd='cd ~/Desktop'
 # others
+alias aliasf='alias | ag'
 alias chr='open -a Google\ Chrome'
 alias c='code'
 alias c.='code .'
 alias hi='ookami open'
-alias edzsh='code ~/.zshrc'
-alias .zsh='source ~/.zshrc'
 alias ff='find . -name'
 alias tl='tree -L 1'
+
+# ========================================
