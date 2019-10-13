@@ -177,6 +177,7 @@ alias xn='tmux new -s'
 alias xa='tmux a -t'
 alias xkill='tmux kill-session -t'
 alias xkills='tmux kill-server'
+alias xcf='tmux source ~/.tmux.conf'
 # Flutter
 alias fl='flutter'
 # zsh config
