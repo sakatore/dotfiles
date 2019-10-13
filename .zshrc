@@ -214,10 +214,11 @@ compctl -K _pip_completion pip
 #
 # Python version manager
 #
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# If needed, comment out the following:
+# cf. https://github.com/pyenv/pyenv/blob/7dd50144d5c81f92fce064625efd111f1a7919ef/README.md#advanced-configuration
+# export PYENV_ROOT="$HOME/.pyenv"
+# export PATH="$PYENV_ROOT/shims:$PATH"
 
 # pyenv zsh completion start
 # Copy & Paste from https://github.com/pyenv/pyenv/blob/master/completions/pyenv.zsh
