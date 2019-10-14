@@ -196,7 +196,7 @@ alias aliasf='alias | ag'
 alias chr='open -a Google\ Chrome'
 alias c='code'
 alias c.='code .'
-alias hi='ookami open'
+alias hi='me open'
 alias ff='find . -name'
 alias tl='tree -L 1'
 
