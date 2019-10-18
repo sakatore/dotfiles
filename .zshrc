@@ -57,12 +57,12 @@ alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.lo
 alias pgs='pg start'
 alias pgp='pg stop'
 alias pgr='pg restart'
-# ls option ==>Replace exa command
-# alias ls='exa -G'
-# alias ll='exa -lG'
-# alias la='exa -laG'
-# alias lh='exa -abghHliS'
-# alias lt='exa --long --tree'
+# exa is a replacement ls, see https://github.com/ogham/exa
+alias ls='exa -G'
+alias ll='exa -lG'
+alias la='exa -laG'
+alias lh='exa -abghHliS'
+alias lt='exa --long --tree'
 # tmux
 alias x='tmux'
 alias xls='tmux ls'
