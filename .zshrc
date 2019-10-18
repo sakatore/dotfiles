@@ -5,6 +5,12 @@ export LANG=en_US.UTF-8
 # To resolve https://github.com/pypa/pipenv/blob/399c8795c77dbf99b48959008881e586be5f8adb/docs/diagnose.rst#-valueerror-unknown-locale-utf-8
 export LC_ALL=en_US.UTF-8
 
+#
+# Ruby version manager
+#
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 # pip zsh completion start
 function _pip_completion {
   local words cword
