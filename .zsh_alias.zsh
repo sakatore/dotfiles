@@ -65,6 +65,8 @@ alias fl='flutter'
 # zsh config
 alias zshrc='code ~/.zshrc'
 alias zshrcload='source ~/.zshrc'
+alias zshalias='code ~/.zsh_alias.zsh'
+alias zshaliasload='source ~/.zsh_alias.zsh'
 # s3cmd
 alias s3ls='s3cmd ls'
 alias s3get='s3cmd get --force --recursive'
