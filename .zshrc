@@ -157,3 +157,14 @@ export PATH="$HOME/Development/flutter/bin:$PATH"
 
 # Personal commands
 export PATH=~/Personal/bin:$PATH
+
+# 
+# Spaceship ZSH
+# 
+# 1. Install via npm, see https://github.com/denysdovhan/spaceship-prompt#npm
+# 2. Install patched fonts, see https://github.com/powerline/fonts#quick-installation
+# 3. Change terminal font config, see https://github.com/powerline/fonts/issues/185
+# 
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
