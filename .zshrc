@@ -74,6 +74,13 @@ export PATH="$HOME/Development/flutter/bin:$PATH"
 # Personal commands
 export PATH=~/Personal/bin:$PATH
 
+
+#
+# Rust
+#
+fpath+=~/.zfunc
+source $HOME/.cargo/env
+
 # 
 # Spaceship ZSH
 # 
