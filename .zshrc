@@ -81,6 +81,12 @@ export PATH=~/Personal/bin:$PATH
 fpath+=~/.zfunc
 source $HOME/.cargo/env
 
+#
+# Docker
+#
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i
+
 # 
 # Spaceship ZSH
 # 
@@ -89,7 +95,13 @@ source $HOME/.cargo/env
 # 3. Change terminal font config, see https://github.com/powerline/fonts/issues/185
 # 
 # Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt spaceship
+# autoload -U promptinit; promptinit
+# prompt spaceship
+
+#
+# Starship
+# ref. https://github.com/starship/starship
+#
+eval "$(starship init zsh)"
 
 source $HOME/.zsh_alias.zsh
