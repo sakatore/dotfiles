@@ -102,6 +102,25 @@ autoload -Uz compinit && compinit -i
 # Starship
 # ref. https://github.com/starship/starship
 #
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 source $HOME/.zsh_alias.zsh
+
+#
+# Git completion & prompt
+# https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-Zsh
+#
+autoload -Uz compinit && compinit
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=\$vcs_info_msg_0_
+# PROMPT=\$vcs_info_msg_0_'%# '
+zstyle ':vcs_info:git:*' formats '%b'
+
+#
+# Custom prompt
+# ref. https://scriptingosx.com/2019/07/moving-to-zsh-06-customizing-the-zsh-prompt/
+#
+PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %# '
