@@ -75,6 +75,10 @@ alias s3get='s3cmd get --force --recursive'
 # cd
 alias api='cd ~/ookamiinc/api'
 alias cdd='cd ~/Desktop'
+# Network
+alias wifi='networksetup -getinfo Wi-Fi'
+alias ip='ipconfig getifaddr en0'
+alias ifip='ifconfig en0'
 # others
 alias aliasf='alias | ag'
 alias chr='open -a Google\ Chrome'
