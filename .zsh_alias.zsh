@@ -23,6 +23,8 @@ alias sp='bundle exec rspec -fd'
 alias cb='bundle exec cucumber'
 alias ru='bundle exec rubocop'
 alias anns='bundle exec annotate --sort'
+# Bundler
+alias bundle1='bundle _1.17.2_'
 # Rails
 alias r='bin/rails'
 alias rd='bin/rails db'
