@@ -62,11 +62,6 @@ eval "$(pipenv --completion)"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-#
-# AWS CLI
-#
-source $HOME/.local/bin/aws_zsh_completer.sh
-
 # Flutter
 export PATH="$HOME/Development/flutter/bin:$PATH"
 
@@ -123,3 +118,8 @@ zstyle ':vcs_info:git:*' formats '%b'
 # ref. https://scriptingosx.com/2019/07/moving-to-zsh-06-customizing-the-zsh-prompt/
 #
 PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %# '
+
+#
+# AWS CLI
+#
+source ~/.pyenv/versions/3.7.5/bin/aws_zsh_completer.sh
