@@ -123,3 +123,19 @@ PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %# '
 # AWS CLI
 #
 source ~/.pyenv/versions/3.7.5/bin/aws_zsh_completer.sh
+
+#
+# inetutils
+# The following commands have been installed with the prefix ‘g’.
+#
+#    dnsdomainname
+#    ftp
+#    rcp
+#    rexec
+#    rlogin
+#    rsh
+#     telnet
+# 
+# If you really need to use these commands with their normal names, you
+# can add a “gnubin” directory to your PATH from your bashrc like:
+# PATH="/usr/local/opt/inetutils/libexec/gnubin:$PATH"
