@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/sakaikyohei/.gitignore_global
+	excludesfile = /Users/kyoheisakai/.gitignore_global
 [diff]
 	tool = vscode
 [difftool "vscode"]
