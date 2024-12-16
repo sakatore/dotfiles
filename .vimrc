@@ -1,3 +1,9 @@
+" https://github.com/tpope/vim-pathogen#runtime-path-manipulation
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
+" https://github.com/altercation/vim-colors-solarized#modify-vimrc
 syntax enable
 set background=dark
 colorscheme solarized

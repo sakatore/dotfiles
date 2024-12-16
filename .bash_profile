@@ -36,8 +36,8 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 # AWS CLI complement
 # http://docs.aws.amazon.com/ja_jp/cli/latest/userguide/cli-install-macos.html#awscli-install-osx-path
 #
-complete -C '$HOME/.local/bin/aws_completer' aws
-export PATH=~/.local/bin:$PATH
+# complete -C '$HOME/.local/bin/aws_completer' aws
+# export PATH=~/.local/bin:$PATH
 
 #
 # hub command

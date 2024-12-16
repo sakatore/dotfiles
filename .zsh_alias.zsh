@@ -10,8 +10,7 @@ alias gr.='git reset .'
 alias ga='git add .'
 alias gd='git diff'
 alias grup='git remote update -p'
-alias gcos='git checkout staging'
-alias gcom='git checkout master'
+alias gcom='git checkout main'
 alias gst='git stash'
 alias gstp='git stash pop'
 alias tg="tig"
@@ -20,6 +19,7 @@ alias hb="hub browse"
 # Gems
 alias be='bundle exec'
 alias sp='bundle exec rspec -fd'
+alias spd='bundle exec rspec -fd --dry-run --order defined'
 alias cb='bundle exec cucumber'
 alias ru='bundle exec rubocop'
 alias anns='bundle exec annotate --sort'
@@ -81,6 +81,9 @@ alias cdd='cd ~/Desktop'
 alias wifi='networksetup -getinfo Wi-Fi'
 alias ip='ipconfig getifaddr en0'
 alias ifip='ifconfig en0'
+# ssh
+alias ftpdata='ssh -i datastadium.pem ubuntu@ec2-52-192-124-195.ap-northeast-1.compute.amazonaws.com'
+alias ftptop='ssh -i rugby-top-league.pem ubuntu@ec2-52-69-84-156.ap-northeast-1.compute.amazonaws.com'
 # others
 alias aliasf='alias | ag'
 alias chr='open -a Google\ Chrome'

@@ -5,6 +5,9 @@ export LANG=en_US.UTF-8
 # To resolve https://github.com/pypa/pipenv/blob/399c8795c77dbf99b48959008881e586be5f8adb/docs/diagnose.rst#-valueerror-unknown-locale-utf-8
 export LC_ALL=en_US.UTF-8
 
+# oncall upgrade Ruby and Node.js 2023/05/15
+# export NODE_OPTIONS=--openssl-legacy-provider
+
 #
 # Ruby version manager
 #
@@ -63,7 +66,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # Flutter
-export PATH="$HOME/Development/flutter/bin:$PATH"
+# export PATH="$HOME/Development/flutter/bin:$PATH"
 
 # Personal commands
 export PATH=~/Personal/bin:$PATH
@@ -72,8 +75,8 @@ export PATH=~/Personal/bin:$PATH
 #
 # Rust
 #
-fpath+=~/.zfunc
-source $HOME/.cargo/env
+# fpath+=~/.zfunc
+# source $HOME/.cargo/env
 
 #
 # Docker
@@ -120,11 +123,6 @@ zstyle ':vcs_info:git:*' formats '%b'
 PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %# '
 
 #
-# AWS CLI
-#
-source ~/.pyenv/versions/3.7.5/bin/aws_zsh_completer.sh
-
-#
 # inetutils
 # The following commands have been installed with the prefix ‘g’.
 #
@@ -139,3 +137,20 @@ source ~/.pyenv/versions/3.7.5/bin/aws_zsh_completer.sh
 # If you really need to use these commands with their normal names, you
 # can add a “gnubin” directory to your PATH from your bashrc like:
 # PATH="/usr/local/opt/inetutils/libexec/gnubin:$PATH"
+
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+#
+# MySQL
+#
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+# For compilers to find mysql@5.7 you may need to set:
+# export LDFLAGS="-L/usr/local/opt/mysql@5.7/lib"
+# export CPPFLAGS="-I/usr/local/opt/mysql@5.7/include"
+# For pkg-config to find mysql@5.7 you may need to set:
+# export PKG_CONFIG_PATH="/usr/local/opt/mysql@5.7/lib/pkgconfig"
+
+#
+# AWS CLI (error)
+#
+# source ~/.pyenv/versions/3.7.5/bin/aws_zsh_completer.sh
