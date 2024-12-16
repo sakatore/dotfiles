@@ -52,3 +52,9 @@ PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %# '
 # Custom Scripts
 # -------------------------------
 export PATH="$PATH:~/Personal/bin"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/kyoheisakai/.dart-cli-completion/zsh-config.zsh ]] && . /Users/kyoheisakai/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+

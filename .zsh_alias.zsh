@@ -42,7 +42,6 @@ alias hr='heroku'
 alias hrl='heroku logs --app'
 alias hrlt='heroku logs --tail -app'
 alias hrrc='heroku run rails console --app'
-alias hrrcs='heroku run rails console --app ookami-staging'
 # DB
 alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
 alias pgs='pg start'
@@ -63,7 +62,7 @@ alias xkill='tmux kill-session -t'
 alias xkills='tmux kill-server'
 alias xcf='tmux source ~/.tmux.conf'
 # Flutter
-alias fl='flutter'
+alias flutter="fvm flutter"
 # zsh config
 alias zshrc='code ~/.zshrc'
 alias zshrcload='source ~/.zshrc'
@@ -74,16 +73,10 @@ alias s3ls='s3cmd ls'
 alias s3get='s3cmd get --force --recursive'
 # Unzip
 # alias unar='unar'
-# cd
-alias api='cd ~/ookamiinc/api'
-alias cdd='cd ~/Desktop'
 # Network
 alias wifi='networksetup -getinfo Wi-Fi'
 alias ip='ipconfig getifaddr en0'
 alias ifip='ifconfig en0'
-# ssh
-alias ftpdata='ssh -i datastadium.pem ubuntu@ec2-52-192-124-195.ap-northeast-1.compute.amazonaws.com'
-alias ftptop='ssh -i rugby-top-league.pem ubuntu@ec2-52-69-84-156.ap-northeast-1.compute.amazonaws.com'
 # others
 alias aliasf='alias | ag'
 alias chr='open -a Google\ Chrome'
