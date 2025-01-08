@@ -1,3 +1,5 @@
+source $HOME/.zsh_alias.zsh
+
 # -------------------------------
 # Language and Locale
 # -------------------------------
