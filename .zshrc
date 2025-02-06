@@ -18,6 +18,12 @@ eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 compctl -K _pyenv pyenv
 
+
+# -------------------------------
+# Dart (pub)
+# -------------------------------
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
 # -------------------------------
 # Node.js (nvm)
 # -------------------------------
