@@ -31,6 +31,14 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # Not needed for zsh
 
+# -------------------------------
+# Java (OpenJDK installed by Homebrew)
+# -------------------------------
+# export JAVA_HOME=$(/usr/libexec/java_home)
+# export PATH="/usr/local/opt/openjdk/bin:$PATH"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+
 
 # -------------------------------
 # Homebrew Tools
