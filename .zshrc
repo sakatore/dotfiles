@@ -36,7 +36,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # -------------------------------
 # export JAVA_HOME=$(/usr/libexec/java_home)
 # export PATH="/usr/local/opt/openjdk/bin:$PATH"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home"
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home"
+# export PATH="$JAVA_HOME/bin:$PATH"
+export JAVA_HOME="/usr/local/opt/openjdk@17"
 export PATH="$JAVA_HOME/bin:$PATH"
 
 
